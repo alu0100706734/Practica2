@@ -9,7 +9,7 @@
 4 verbose install initial load of C:\Users\innNNN\Documents\GitHub\Practica2\package.json
 5 verbose stack Error: Failed to parse json
 5 verbose stack Unexpected token 'm' at 8:6
-5 verbose stack     "mocha": "latest"
+5 verbose stack     "mocha": "*"
 5 verbose stack      ^
 5 verbose stack     at parseError (C:\Program Files\nodejs\node_modules\npm\node_modules\read-package-json\read-json.js:379:11)
 5 verbose stack     at parseJson (C:\Program Files\nodejs\node_modules\npm\node_modules\read-package-json\read-json.js:68:23)
@@ -24,7 +24,7 @@
 12 error code EJSONPARSE
 13 error Failed to parse json
 13 error Unexpected token 'm' at 8:6
-13 error     "mocha": "latest"
+13 error     "mocha": "*"
 13 error      ^
 14 error File: C:\Users\innNNN\Documents\GitHub\Practica2\package.json
 15 error Failed to parse package.json data.
