@@ -2,7 +2,8 @@
 1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
 1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
 1 verbose cli   'install',
-1 verbose cli   'chai' ]
+1 verbose cli   'gulp-concat',
+1 verbose cli   '--save-dev' ]
 2 info using npm@2.14.3
 3 info using node@v4.1.0
 4 verbose install initial load of C:\Users\innNNN\Documents\GitHub\Practica2\package.json
@@ -16,7 +17,7 @@
 5 verbose stack     at FSReqWrap.readFileAfterClose [as oncomplete] (evalmachine.<anonymous>:380:3)
 6 verbose cwd C:\Users\innNNN\Documents\GitHub\Practica2\tests
 7 error Windows_NT 6.1.7601
-8 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "chai"
+8 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "gulp-concat" "--save-dev"
 9 error node v4.1.0
 10 error npm  v2.14.3
 11 error file C:\Users\innNNN\Documents\GitHub\Practica2\package.json
