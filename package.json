@@ -4,6 +4,7 @@
   "description": "",
   "dependencies": {},
   "devDependencies": {
+	"chai": "latest"
     "mocha": "latest"
   },
   "main": "index.js",
