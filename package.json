@@ -6,7 +6,9 @@
   "scripts": {
     "test": "open test/index.html"
   },
-  "dependencies": {},
+  "dependencies": {
+    "del": "^2.0.2"
+  },
   "devDependencies": {
     "chai": "*",
     "del": "^2.0.2",
