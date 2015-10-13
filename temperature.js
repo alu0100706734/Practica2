@@ -27,7 +27,7 @@ Temperatura.prototype.converted_ = function (valor){
 	
 	  if (Medida.type == 'c' || Medida.type == 'C') {
       resultF = (Medida.value * 9/5)+32;
-      resultF = resultF.toFixed(1)+" Farenheit  |";
+      resultF = resultF.toFixed(1)+" Fahrenheit  |";
 	  resultK = (Medida.value + 273.15);
 	  resultK = resultK.toFixed(1)+" Kelvin   |";
 	  resultC = Medida.value;
@@ -59,9 +59,11 @@ function conversorHTML(){
 	//converted.innerHTML = resultF;
 	Temp = new Temperatura(entrada);
 	
-	convertedC.innerHTML = Temp.converted_(Temperatura.valor);
+	convertidor = Temp.converted_(Temperatura.valor);
 	convertedF.innerHTML = resultF;
 	convertedK.innerHTML = resultK;
+		convertedC.innerHTML = resultC;
+
 	
 }
 
