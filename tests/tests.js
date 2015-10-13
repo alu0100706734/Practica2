@@ -25,18 +25,6 @@ suite('temperature', function() {
 	test('Ojo viruelo = error', function(){
 		original.value = "Ojo viruelo";
 		calculate();
-		assert.equal(converted.innerHTML, 'ERROR! Prueba algo como \'89.5F\' ',/ERROR/);
+		assert.equal(converted.innerHTML, 'ERROR! Try something like \'-4.2C\'',/ERROR/);
 	});
-});
-
-describe('Array', function(){
-  before(function(){
-    // ...
-  });
-
-  describe('#indexOf()', function(){
-    it('should return -1 when not present', function(){
-      [1,2,3].indexOf(4).should.equal(-1);
-    });
-  });
 });
