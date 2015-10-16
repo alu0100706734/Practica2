@@ -34,5 +34,13 @@ suite('temperature', function() {
 		 assert.equal(aux.tipo, "K");
 		 
 	 });
+	 
+	   test("5X === ERROR! Prueba con algo como '52.8E4K'", function() {
+      window.onload = function() {
+        var aux = new Temperatura(5,0,"X");
+        resolver();
+        expect(fin.innerHTML).to.match("ERROR! Prueba con algo como '52.8E4K' ");
+      }
+    });
 	
 });
