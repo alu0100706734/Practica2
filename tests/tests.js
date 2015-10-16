@@ -1,30 +1,38 @@
 var assert = chai.assert;
 
 suite('temperature', function() {
-    test('32F = 0C', function() {
-        original.value = "32F";
-        calculate();
-        assert.deepEqual(converted.innerHTML, "0.0 Celsius");
-    });
-    test('45C = 113.0 Farenheit', function() {
-        original.value = "45C";
-        calculate();
-        assert.deepEqual(converted.innerHTML, "113.0 Farenheit");
-    });
-    test('5X = error', function() {
-        original.value = "5X";
-        calculate();
-        assert.match(converted.innerHTML, /ERROR/);
+	test('Calcular función', function()
+     {
+      aux = new Temperatura();
+     });
+    test('32e4C to 2336.0F', function()
+     {
+        aux = new Temperatura(32e4,"F");
+        assert.equal(aux.valor, "32e4");
+		assert.equal(aux.tipo, "F");
+     });
+	 test ('108.2K to -131.7F', function()
+	 {
+		 aux = new Temperatura(108.2,"K");
+		 assert.equal(aux.valor, "108.2");
+		 assert.equal(aux.tipo, "K");
+		 
+	 });
+	 
+	  test ("El resultado es: 5F", function() {
+      window.onload = function() {
+        var temp = new Temperatura(5,0,"F");
+        temp.mostrar_final();
+        expect(fin.innerHTML).to.equal("El resultado es: 5 F");
+      }
     });
 	
-	test('14.32 = error', function(){
-		original.value = "14.32";
-		calculate();
-		assert.notEqual(converted.innerHTML, 14.32, "/ERROR/");
-	});
-	test('Ojo viruelo = error', function(){
-		original.value = "Ojo viruelo";
-		calculate();
-		assert.equal(converted.innerHTML, 'ERROR! Try something like \'-4.2C\'',/ERROR/);
-	});
+		 test ('743e2K to 14586.9C', function()
+	 {
+		 aux = new Temperatura(743e2,"K");
+		 assert.equal(aux.valor, "743e2");
+		 assert.equal(aux.tipo, "K");
+		 
+	 });
+	
 });
