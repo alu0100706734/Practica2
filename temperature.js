@@ -6,7 +6,7 @@ function Medida(valor, tipo){
 function Temperatura(valor, tipo){
     Medida.call(this, valor, tipo); 
 }
-
+Temperatura.prototype.constructor = Temperatura;
 Temperatura.prototype = new Medida();
 
 Temperatura.prototype.celsius = function(){
